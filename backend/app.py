@@ -45,6 +45,9 @@ app.register_blueprint(predictions_bp, url_prefix='/api/predictions')
 def health_check():
     return jsonify({"status": "healthy", "message": "Trendora API is running"})
 
+from error_handlers import register_error_handlers
+register_error_handlers(app)
+
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 5001))
     app.run(host='0.0.0.0', port=port, debug=True)
