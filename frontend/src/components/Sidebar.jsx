@@ -2,17 +2,13 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-    LayoutDashboard, Target, LineChart, Sparkles,
+    LayoutDashboard,
     Moon, Sun, LogOut, ChevronLeft, ChevronRight
 } from 'lucide-react';
 
 const navItems = [
     { label: 'Core', type: 'heading' },
     { icon: LayoutDashboard, label: 'Dashboard', path: '/dashboard' },
-    { icon: Target, label: 'Gap Analysis', path: '/gap-analysis' },
-    { icon: LineChart, label: 'Predictions', path: '/predictions' },
-    { label: 'Advanced', type: 'heading' },
-    { icon: Sparkles, label: 'Style Trainer', path: '/style-trainer' },
 ];
 
 function Sidebar() {

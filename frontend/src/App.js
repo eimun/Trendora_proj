@@ -2,9 +2,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Login from './components/Login';
 import LandingPage from './components/LandingPage';
 import Dashboard from './components/Dashboard';
-import GapAnalysis from './components/GapAnalysis';
-import PredictiveDashboard from './components/PredictiveDashboard';
-import StyleTrainer from './components/StyleTrainer';
 import AppLayout from './components/AppLayout';
 import ErrorBoundary from './components/ErrorBoundary';
 
@@ -19,9 +16,6 @@ function App() {
 
           {/* Authenticated routes with sidebar */}
           <Route path="/dashboard" element={<AppLayout><Dashboard /></AppLayout>} />
-          <Route path="/gap-analysis" element={<AppLayout><GapAnalysis /></AppLayout>} />
-          <Route path="/predictions" element={<AppLayout><PredictiveDashboard /></AppLayout>} />
-          <Route path="/style-trainer" element={<AppLayout><StyleTrainer /></AppLayout>} />
         </Routes>
       </BrowserRouter>
     </ErrorBoundary>
