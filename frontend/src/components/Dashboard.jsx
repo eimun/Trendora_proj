@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
-import StyleTrainer from './StyleTrainer';
+
 import { API_URL } from '../config';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AreaChart, Area, Tooltip, ResponsiveContainer } from 'recharts';
@@ -66,10 +66,7 @@ function Dashboard() {
                         ))}
                     </motion.div>
 
-                    {/* Style Trainer Section */}
-                    <div className="mb-10">
-                        <StyleTrainer />
-                    </div>
+
 
                     {/* Trends Grid */}
                     {loading ? (
