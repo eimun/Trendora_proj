@@ -19,14 +19,10 @@ add_virality()
 # Register blueprints
 from auth import auth_bp
 from routes.trends import trends_bp
-from routes.generate import generate_bp
-from routes.calendar import calendar_bp
 from routes.virality import virality_bp
 
 app.register_blueprint(auth_bp, url_prefix='/api/auth')
 app.register_blueprint(trends_bp, url_prefix='/api/trends')
-app.register_blueprint(generate_bp, url_prefix='/api/generate')
-app.register_blueprint(calendar_bp, url_prefix='/api/calendar')
 app.register_blueprint(virality_bp, url_prefix='/api/virality')
 
 @app.route('/api/health')
