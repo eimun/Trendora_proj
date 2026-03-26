@@ -12,9 +12,7 @@ Trendora helps content creators discover trending topics, analyze competitor gap
 - **Deployment**: Render (backend) + Vercel (frontend)
 
 ## Features
-- 📊 Real-time trend tracking across niches
-- 🎯 Competitor gap analysis
-- 🔮 Predictive trend forecasting
+- 📊 Real-time trend tracking across niche
 - ✨ AI-powered content generation
 - 🎨 Personal writing style training
 - 🌙 Dark mode support
